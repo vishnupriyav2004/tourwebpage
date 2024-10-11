@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadHTML('achieve-container', 'achieve.html');
     loadHTML('footer-container', 'footer.html');
     loadHTML('offer-container', 'offer.html');
-    loadHTML('services-container', 'Service.html');
+    loadHTML('services-container', 'service.html');
     loadHTML('popularpackages-container', 'popular-packages.html');
     loadHTML('book-container', 'bookabike.html');
 
