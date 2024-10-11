@@ -1,0 +1,105 @@
+<footer>
+    <img src="logo.svg" alt="logo"/>
+    <hr>
+    <div class="footer-content">
+        <div>
+            <h3>Services</h3>
+            <ul class="services1">
+                <li>Bike and Rickshaw rental</li>
+                <li>Guided Tours Of Lucca</li>
+                <li>Guided Bike Tours Of Lucca</li>
+                <li>Trip In The Tuscan Hills</li>
+                <li>Transportation With Luxury Cars</li>
+                <li>Wine Tours By Bus With Guide</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Home</h3>
+            <ul class="HOME">
+                <li><a href="#" style="color:white">Home</a></li>
+                <li><a href="#" style="color:white">About Us</a></li>
+                <li><a href="#" style="color:white">Tour Packages</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Help</h3>
+            <ul class="Help">
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="contacts">
+            <h3>Contacts</h3>
+            <div class="icons1">
+                <i class="material-icons" style="color:orange">location_on</i>
+                <p>Paizza Napoleone, Lucca, Tuscany</p>
+            </div>
+            <div class="icons1">
+                <i class="material-icons" style="color:orange">phone</i>
+                <p>+39 346 668 5708</p>
+            </div>
+            <div class="icons1">
+                <i class="material-icons" style="color:orange">email</i>
+                <p><a href="mailto:info@tuscanytours.com" style="color:white">info@tuscanytours.com</a></p>
+            </div>
+        </div>
+        <div>
+            <h3>Social Media</h3>
+            <div class="social-media">
+                <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter" style="color:orange">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com/yourusername" target="_blank" aria-label="Facebook" style="color:orange">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram" style="color:orange">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+   
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.icons1 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.HOME, .Help, .services1 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+}
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    hr {
+        width: 80%;
+    }
+    .icons1 {
+        justify-content: center;
+    }
+}
+</style>

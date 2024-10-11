@@ -1,0 +1,86 @@
+<style>
+.services-types {
+    padding: 50px 20px; /* Reduced padding for smaller screens */
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center-aligns the content on smaller screens */
+    margin-top: 20px;
+}
+
+.service {
+    flex: 1 1 200px; /* Allows items to flex and wrap */
+    max-width: 250px;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .services-types {
+        padding: 30px 10px;
+    }
+
+    .services {
+        gap: 15px;
+    }
+
+    .service {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-types {
+        padding: 20px 5px;
+    }
+
+    .service img {
+        max-width: 180px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+</style>
+<body>
+<section class="services-types">
+   
+    <div class="services">
+        <div class="service">
+            <img src="services/services01.svg" alt="Lucca Bike Tour" style="border-radius: 20px">
+            <h3>Lucca Bike Tour</h3>
+            <p>A tour of the city and its Surroundings led by a proffesional guide...</p>
+        </div>
+        <div class="service">
+            <img src="services/services02.svg" alt="Wine Tasting" style="border-radius: 20px;">
+            <h3>Wine Tasting in Tuscany</h3>
+                <p>A tour of the city and its Surroundings led by a proffesional guide...</p>
+        </div>
+        <div class="service">
+            <img src="services/services03.svg" alt="Cinque Terre Tour"style="border-radius: 20px;">
+            <h3>Cinque Terre Tour</h3>
+                <p>A tour of the city and its Surroundings led by a proffesional guide...</p>
+        </div>
+        <div class="service">
+            <img src="services/services04.svg" alt="Siena and Surroundings" style="border-radius: 20px;">
+            <h3>Siena and Surroundings</h3>
+                <p>A tour of the city and its Surroundings led by a proffesional guide...</p>    
+        </div>
+    </div>
+
+</section>
+

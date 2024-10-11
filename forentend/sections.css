@@ -1,0 +1,67 @@
+.popular-destinations {
+    padding: 50px 20px; /* Default padding for all screens */
+    text-align: center;
+}
+
+/* Flex settings for subtitle and destinations */
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Individual destination card styling */
+.destination-card {
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+/* Image styling within destination cards */
+.destination-card img {
+    width: 100%;
+    max-width: 250px; /* Constrains max width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Icon settings */
+.icons {
+    color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Styles for larger screens */
+@media (min-width: 1024px) {
+    .popular-destinations {
+        padding: 100px 200px; /* Increase padding for larger screens */
+    }
+
+    .destinations {
+        justify-content: space-around; /* Center content on wide screens */
+    }
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .popular-destinations {
+        padding: 50px 10px; /* Reduce padding for mobile */
+    }
+
+    .destinations {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+}

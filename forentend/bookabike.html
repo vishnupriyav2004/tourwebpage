@@ -1,0 +1,134 @@
+    <style>
+       
+
+    .booking-container1 {
+        background-color: rgb(255, 165, 0, 0.6);
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .container1 {
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .form-box1 {
+        background-color: rgba(255, 255, 255, 0.9);
+        flex: 1;
+        padding: 30px;
+        border-radius: 15px;
+        min-width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-grid1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .book-button {
+        background-color: rgb(255, 165, 0);
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .book-button:hover {
+        background-color: rgb(255, 140, 0);
+    }
+
+    #success-message {
+        display: none;
+        text-align: center;
+        color: green;
+        margin-top: 20px;
+    }
+
+    .image-box {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .image-box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 768px) {
+        .form-grid1 {
+            grid-template-columns: 1fr;
+        }
+
+        .container1 {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .image-box {
+            padding: 10px;
+        }
+    }
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="booking-container1">
+        <h1>Book Now Bike</h1>
+        <div class="container1">
+            <div class="form-box1">
+                <div class="form-grid1">
+                    <label><b>name and surname:</b></label>
+                    <label><b>email address:</b></label>
+                    <input type="text" id="name" placeholder="Enter your name and surname" required>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                    <label><b>phone Number:</b></label>
+                    <label><b>Service Type:</b></label>
+                    <input type="tel" id="phone" placeholder="Enter your telephone number" required>
+                    <select id="service-type" required>
+                        <option value="">Select the service types</option>
+                        <option value="Repair">Repair</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Rent">Rent</option>
+                    </select>
+                    <label><b>Date:</b></b></label>
+                    <label><b>Time:</b></label>
+                    <input type="date" id="date" required>
+                    <input type="time" id="time" required>
+                    <button class="book-button" onclick="submitForm()">Book Now</button>
+                </div>
+                <div id="success-message">Booking successful!</div>
+            </div>
+            <div class="image-box">
+                <img src="book_a_bike/bike picture.png" alt="Bike Image" width="490px">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+          
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var serviceType = document.getElementById('service-type').value;
+            var date = document.getElementById('date').value;
+            var time = document.getElementById('time').value;
+
+            if(name && email && phone && serviceType && date && time) {
+                document.getElementById('success-message').style.display = 'block';
+            } else {
+                alert("Please fill out all fields");
+            }
+        }
+    </script>

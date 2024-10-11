@@ -1,0 +1,74 @@
+<header>
+  <nav>
+      <div class="logo">
+          <img src="logo.svg" alt="Tuscany Tours">
+      </div>
+      <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="/forentend/aboutus/index1.html">About Us</a></li>
+          <li><a href="/popular-packages.html">Tour Packages</a></li>
+          <li><a href="/footer.html">Contact Us</a></li>
+      </ul>
+      <div class="auth-buttons">
+          <select id="language">
+              <option value="eng">ENG</option>
+              <option value="ita">ITA</option>
+              <option value="esp">ESP</option>
+          </select>
+          <a id="login">Login</a>
+          <button id="signup">Sign Up</button>
+      </div>
+  </nav>
+
+  <div class="hero">
+      <h1>Enjoy in the best way!</h1>
+      <p>Enjoy our services for your trip anytime</p>
+  </div>
+
+  <div class="book">
+      <div class="tabs">
+          <button id="public-tab" class="active" onclick="switchTab('public')">Public Tours</button>
+          <button id="private-tab" onclick="switchTab('private')">Private Tours</button>
+      </div>
+
+      <div class="booking-form">
+          <div class="form-group">
+              <label>Number of people</label><br>
+              <select>
+                  <option>Choose number</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+              </select>
+          </div>
+          <div class="form-group date-group">
+              <label>Date</label><br>
+              <input type="date" />
+          </div>
+          <div class="form-group time-group">
+              <label>Time</label><br>
+              <input type="time" />
+          </div>
+          <div class="form-group tour-group">
+              <label>Tour</label><br>
+              <select>
+                  <option>Select Tour</option>
+                  <option>Tour 1</option>
+                  <option>Tour 2</option>
+              </select>
+          </div>
+          <div class="form-group transport-group">
+              <label>Transportation</label><br>
+              <select>
+                  <option>Select Transportation</option>
+                  <option>Bus</option>
+                  <option>Car</option>
+              </select>
+          </div>
+
+          <button class="search-btn">
+              <img src="search-icon.png" alt="Search" />
+          </button>
+      </div>
+  </div>
+</header>

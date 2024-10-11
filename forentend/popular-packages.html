@@ -1,0 +1,112 @@
+
+    <style>
+    .popular-packages {
+    padding: 50px 20px; 
+    text-align: center;
+}
+
+
+.popular {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.package img {
+    width: 100%;
+    max-width: 250px; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.package {
+    flex: 1 1 200px; 
+    max-width: 250px;
+}
+
+
+@media (min-width: 1024px) {
+    .popular-packages {
+        padding: 100px 200px; 
+    }
+
+    .popular {
+        justify-content: space-around; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .popular-packages {
+        padding: 50px 10px; 
+    }
+
+    .popular {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+    </style>
+    
+    
+<section class="popular-packages">
+    <h2>The most popular-packages</h2>
+    <div class="popular">
+        <div class="package">
+            <img src="popular_package/pop_package01.svg" alt="Lucca Bike Tour" style="border-radius: 20px">
+            <h2>BIKE/RICKSHAW</h2>
+            <p><sup>€</sup><b style="color:orange;font-size: 25px;">  10</b>/day</p>
+                <ul style="list-style-type: none;text-align: left;line-height: 40px;">
+                    <li>book a boke</li>
+                    <li>City App</li>
+                    <li>discount</li>
+                    <li>Guaranteed service</li>
+                </ul>
+                <button  class="b1">book now</button>
+           
+        </div>
+        <div class="package">
+            <img src="popular_package/pop_package02.svg" alt="Wine Tasting" style="border-radius: 20px;">
+            <h2>BIKE TOOURS</h2>
+            <p><sup>€</sup><b style="color:orange;font-size: 25px;">  30</b>/day</p>
+                <ul style="list-style-type: none;text-align: left;line-height: 40px;">
+                    <li>book a boke</li>
+                    <li>City App</li>
+                    <li>discount</li>
+                    <li>Guaranteed service</li>
+                </ul>
+                <button  class="b1">book now</button>
+             </div>
+        <div class="package">
+            <img src="popular_package/pop_package03.svg" alt="Cinque Terre Tour"style="border-radius: 20px;">
+            <h2>BUS TRIPS</h2>
+            <p><sup>€</sup><b style="color:orange;font-size: 25px;">  45</b>/day</p>
+                <ul style="list-style-type: none;text-align: left;line-height: 40px;">
+                    <li>book a boke</li>
+                    <li>City App</li>
+                    <li>discount</li>
+                    <li>Guaranteed service</li>
+                </ul>
+                <button  class="b1">book now</button>
+        </div>
+        <div class="package">
+            <img src="popular_package/pop_package04.svg" alt="Siena and Surroundings" style="border-radius: 20px;">
+            <h2>TRANSFER</h2>
+           <p><sup>€</sup><b style="color:orange;font-size: 25px;">  10</b>/day</p>
+                <ul style="list-style-type: none;text-align: left;line-height: 40px;">
+                    <li>book a boke</li>
+                    <li>City App</li>
+                    <li>discount</li>
+                    <li>Guaranteed service</li>
+                </ul>
+                <button  class="b1">book now</button>
+        </div>
+    </div>
+
+</section>

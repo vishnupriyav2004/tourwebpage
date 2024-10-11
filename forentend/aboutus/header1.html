@@ -1,0 +1,119 @@
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="logo.svg" alt="Tuscany Tours">
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index1.html">About Us</a></li>
+            <li><a href="../popular-packages.html">Tour Packages</a></li>
+            <li><a href="../footer.html">Contact Us</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <select id="language">
+                <option>eng</option>
+            </select>
+            <a id="login">Login</a>
+            <button id="signup">Sign Up</button>
+        </div>
+    </nav>
+    <div class="hero">
+        <h1>Our team cares about your full relax</h1>
+        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+        <button b2>View Our Tour Packages</button>
+    </div>
+</header>
+
+<style>
+
+header {
+    background: url('about_bg.svg') no-repeat center center/cover;
+    padding-top : 10px;   
+    padding-bottom: 200px; 
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0 200px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+#language {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.auth-buttons a, .auth-buttons button {
+    color: white;
+    margin-left: 10px;
+}
+
+#signup {
+    background-color: #f87a29;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.hero {
+    padding: 200px 400px;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 0 100px;
+    }
+    .hero {
+        padding: 100px 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .hero {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 20px;
+    }
+    .hero {
+        padding: 20px;
+    }
+    .hero h1 {
+        font-size: 24px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+    #signup {
+        padding: 8px 20px;
+    }
+}
+</style>

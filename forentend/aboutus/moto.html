@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+    }
+
+    .features-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #f9d1a7;
+        padding: 20px;
+    }
+
+    .feature-card {
+        background-color: #fff3e6;
+        border-radius: 10px;
+        text-align: center;
+        padding: 20px;
+        width: 20%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        flex-basis: 20%;
+    }
+
+    .feature-card .icon {
+        font-size: 50px;
+        color: #f57c00;
+        margin-bottom: 15px;
+    }
+
+    .feature-card p {
+        font-size: 16px;
+        color: #333;
+        margin: 0;
+    }
+
+    @media (max-width: 1024px) {
+        .feature-card {
+            flex-basis: 45%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .feature-card {
+            flex-basis: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="features-section">
+        <div class="feature-card">
+            <i class="fas fa-box icon"></i>
+            <p>Complete Packages For All Your Wishes</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-award icon"></i>
+            <p>Over 30 Years Of Experience</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-user-tie icon"></i>
+            <p>Expert Guides For You</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-dollar-sign icon"></i>
+            <p>Guaranteed fun at the best price!</p>
+        </div>
+    </div>
+</body>
+</html>
